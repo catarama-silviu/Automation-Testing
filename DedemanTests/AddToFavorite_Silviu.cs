@@ -1,29 +1,30 @@
-﻿using System;
+﻿using DedemanTests.Enums;
+using DedemanTests.Enums_Silviu;
+using DedemanTests.PO;
+using DedemanTests.PO_Silviu;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Interactions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium;
 using System.Threading;
-using DedemanTests.PO;
-using OpenQA.Selenium.Interactions;
-using DedemanTests.Enums;
-using DedemanTests.Enums_Silviu;
-using DedemanTests.PO_Silviu;
+using System.Threading.Tasks;
+
 
 namespace DedemanTests
 {
     [TestClass]
-    public class SearchForAProduct_Silviu
-
+    public class AddToFavorite_Silviu
     {
         private IWebDriver driver;
         private LoginPagePO loginPagePO;
         private Actions actions;
         private EnumsLogin enumsLogin;
-        private SearchForAProductPO searchForAProductPO;
+        private AddToFavoritePO addToFavoritePO;
+        
 
         [TestInitialize]
         public void testInitialize()
@@ -42,26 +43,25 @@ namespace DedemanTests
             loginPagePO.login("exosilviu@gmail.com", "test12345");
         }
 
+
+
         [TestCleanup]
         public void cleanup()
         {
-           driver.Quit();
+            driver.Quit();
         }
+
 
 
         [TestMethod]
-        public void searchProduct()
+        public void ShouldAddProductToFavorite()
         {
 
-            //search the most expensive product from EGO brand
             Thread.Sleep(3000);
-            searchForAProductPO = new SearchForAProductPO(driver);
-            searchForAProductPO.searchProducts("masini de tuns iarba EGO");
-            Thread.Sleep(5000);
-            searchForAProductPO.SelectItemOrdoneaza("Pret (lei) descendent");
-            Assert.AreEqual("Masina de tuns gazon Ego LM1903E-SP, cu acumulator li-ion 56 V / 5 Ah si incarcator rapid, 47 cm",searchForAProductPO.txtLawnMower.Text);
+            addToFavoritePO = new AddToFavoritePO(driver);
+            addToFavoritePO.AddProductToFavorite("Masina de tuns iarba, electrica Grunman LM-PT103 1000 W");
+            Thread.Sleep(3000);
+            Assert.AreEqual("Produsul a fost adaugat in lista de favorite.", addToFavoritePO.txt_addToFav.Text);
         }
-
-
     }
 }

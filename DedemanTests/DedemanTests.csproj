@@ -56,9 +56,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddToFavorite_Silviu.cs" />
     <Compile Include="Enums_Silviu\EnumsLogin.cs" />
+    <Compile Include="Enums_Silviu\Enums_AddproductToFavorite.cs" />
     <Compile Include="Enums_Silviu\Enums_Search_For_A_Product.cs" />
     <Compile Include="LoginTestDedeman_Silviu.cs" />
+    <Compile Include="PO_Silviu\AddToFavoritePO.cs" />
     <Compile Include="PO_Silviu\LoginPagePO.cs" />
     <Compile Include="PO_Silviu\SearchForAProductPO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

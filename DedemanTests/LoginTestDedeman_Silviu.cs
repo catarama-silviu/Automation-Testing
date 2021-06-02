@@ -65,7 +65,7 @@ namespace DedemanTests
             Thread.Sleep(3000);
             loginPagePO.login("exosilviu1@gmail.com", "test123451");
             Thread.Sleep(3000);
-            Assert.AreEqual("Adresă de e-mail sau parolă incorectă. Te rugăm să reîncerci.", loginPagePO.txtFailLogin.Text);
+            Assert.AreEqual("Adresa de e-mail sau parola incorecta. Te rugam să reincerci.", loginPagePO.txtFailLogin.Text);
         }
 
         [TestMethod]
@@ -74,7 +74,7 @@ namespace DedemanTests
             Thread.Sleep(3000);
             loginPagePO.login("exosilviu1@gmail.com", "test12345");
             Thread.Sleep(3000);
-            Assert.AreEqual("Adresă de e-mail sau parolă incorectă. Te rugăm să reîncerci.", loginPagePO.txtFailLogin.Text);
+            Assert.AreEqual("Adresa de e-mail sau parola incorecta. Te rugam să reincerci.", loginPagePO.txtFailLogin.Text);
         }
 
         [TestMethod]
@@ -83,7 +83,7 @@ namespace DedemanTests
             Thread.Sleep(3000);
             loginPagePO.login("exosilviu@gmail.com", "test123451");
             Thread.Sleep(3000);
-            Assert.AreEqual("Adresă de e-mail sau parolă incorectă. Te rugăm să reîncerci.", loginPagePO.txtFailLogin.Text);
+            Assert.AreEqual("Adresa de e-mail sau parola incorecta. Te rugam să reincerci.", loginPagePO.txtFailLogin.Text);
         }
 
 

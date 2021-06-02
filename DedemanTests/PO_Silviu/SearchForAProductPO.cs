@@ -11,7 +11,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace DedemanTests.PO_Silviu
 {
-    class SearchForAProductPO
+   public class SearchForAProductPO
     {
         private IWebDriver driver;
         private Enums_Search_For_A_Product enumsSearch = new Enums_Search_For_A_Product();
