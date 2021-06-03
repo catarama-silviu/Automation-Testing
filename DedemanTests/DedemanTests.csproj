@@ -57,13 +57,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddToFavorite_Silviu.cs" />
+    <Compile Include="ContactTest_Vlad.cs" />
+    <Compile Include="ContTest_Vlad.cs" />
     <Compile Include="Enums_Silviu\EnumsLogin.cs" />
     <Compile Include="Enums_Silviu\Enums_AddproductToFavorite.cs" />
     <Compile Include="Enums_Silviu\Enums_Search_For_A_Product.cs" />
+    <Compile Include="Enums_Vlad\EnumsCont.cs" />
+    <Compile Include="Enums_Vlad\EnumsContactPage.cs" />
+    <Compile Include="Enums_Vlad\EnumsOpinie.cs" />
     <Compile Include="LoginTestDedeman_Silviu.cs" />
+    <Compile Include="OpinieTest_Vlad.cs" />
     <Compile Include="PO_Silviu\AddToFavoritePO.cs" />
     <Compile Include="PO_Silviu\LoginPagePO.cs" />
     <Compile Include="PO_Silviu\SearchForAProductPO.cs" />
+    <Compile Include="PO_Vlad\ContactPagePO.cs" />
+    <Compile Include="PO_Vlad\ContPO.cs" />
+    <Compile Include="PO_Vlad\OpiniePO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchForAProduct_Silviu.cs" />
   </ItemGroup>
