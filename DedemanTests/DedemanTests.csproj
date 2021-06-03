@@ -56,9 +56,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbonareTest_Dan.cs" />
+    <Compile Include="AdaugaCos_Dan.cs" />
     <Compile Include="AddToFavorite_Silviu.cs" />
+    <Compile Include="AplicareJob_Dan.cs" />
     <Compile Include="ContactTest_Vlad.cs" />
     <Compile Include="ContTest_Vlad.cs" />
+    <Compile Include="Enums_Dan\Enums_Abonare.cs" />
+    <Compile Include="Enums_Dan\Enums_CosCumparaturi.cs" />
+    <Compile Include="Enums_Dan\Enums_Job.cs" />
     <Compile Include="Enums_Silviu\EnumsLogin.cs" />
     <Compile Include="Enums_Silviu\Enums_AddproductToFavorite.cs" />
     <Compile Include="Enums_Silviu\Enums_Search_For_A_Product.cs" />
@@ -67,6 +73,9 @@
     <Compile Include="Enums_Vlad\EnumsOpinie.cs" />
     <Compile Include="LoginTestDedeman_Silviu.cs" />
     <Compile Include="OpinieTest_Vlad.cs" />
+    <Compile Include="PO_Dan\AbonareNewsletterPO.cs" />
+    <Compile Include="PO_Dan\AdaugaCosPO.cs" />
+    <Compile Include="PO_Dan\AplicareJobPO.cs" />
     <Compile Include="PO_Silviu\AddToFavoritePO.cs" />
     <Compile Include="PO_Silviu\LoginPagePO.cs" />
     <Compile Include="PO_Silviu\SearchForAProductPO.cs" />
